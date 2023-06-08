@@ -31,6 +31,8 @@ class UserPostModel(models.Model):
     user_des = models.ForeignKey(UserModel, on_delete=models.CASCADE, null=True, blank=True,
                                  related_name="user_post_model")
 
+    likes = models.ManyToManyField(UserModel, related_name="user_post_likes", null=True)
+
     created_at = models.DateTimeField(auto_now_add=True, null=True, blank=True)
 
     def __str__(self):
