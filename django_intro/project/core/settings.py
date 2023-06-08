@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'playground',
-    'student'
+    'student',
+    'User_Assignment'
 ]
 
 MIDDLEWARE = [

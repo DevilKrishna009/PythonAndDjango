@@ -12,3 +12,11 @@ class StudentDetailModel(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class StudentEducationModel(models.Model):
+    name = models.CharField(max_length=30)
+    percentage = models.IntegerField()
+    university = models.CharField(max_length=30)
+
+
